@@ -1,0 +1,88 @@
+{
+    "coverImageFilename": "Cover.png",
+    "icon": "Cover.png",
+    "components": [
+        {
+            "Type": "AssetsMod",
+            "InstallAction": {
+                "PreloadFiles": [
+                    "{{MenuTitle}}"
+                ],
+                "Actions": [
+                    {
+                        "Type": "ReplaceAsset",
+                        "FromDataFile": "LogoBat.dat",
+                        "Locator": {
+                            "TypeIs": "Texture2D",
+                            "NameIs": "LogoBat"
+                        },
+                        "AllowOverwriteName": false,
+                        "StepNumber": 1
+                    },
+                    {
+                        "Type": "ReplaceAsset",
+                        "FromDataFile": "LogoE.dat",
+                        "Locator": {
+                            "TypeIs": "Texture2D",
+                            "NameIs": "LogoE"
+                        },
+                        "AllowOverwriteName": false,
+                        "StepNumber": 2
+                    },
+                    {
+                        "Type": "ReplaceAsset",
+                        "FromDataFile": "LogoSaber.dat",
+                        "Locator": {
+                            "TypeIs": "Texture2D",
+                            "NameIs": "LogoSaber"
+                        },
+                        "AllowOverwriteName": false,
+                        "StepNumber": 3
+                    }
+                ]
+            },
+            "UninstallAction": {
+                "PreloadFiles": [
+                    "{{MenuTitle}}"
+                ],
+                "Actions": [
+                    {
+                        "Type": "RestoreAsset",
+                        "Locator": {
+                            "TypeIs": "Texture2D",
+                            "NameIs": "LogoBat"
+                        },
+                        "StepNumber": 1
+                    },
+                    {
+                        "Type": "RestoreAsset",
+                        "Locator": {
+                            "TypeIs": "Texture2D",
+                            "NameIs": "LogoE"
+                        },
+                        "StepNumber": 2
+                    },
+                    {
+                        "Type": "RestoreAsset",
+                        "Locator": {
+                            "TypeIs": "Texture2D",
+                            "NameIs": "LogoSaber"
+                        },
+                        "StepNumber": 3
+                    }
+                ]
+            }
+        }
+    ],
+    "version": "1.0.0",
+    "links": {},
+    "description": [
+        "Mod Description"
+    ],
+    "gameVersion": "1.8.0",
+    "platform": "Quest",
+    "id": "ModID",
+    "name": "Mod name",
+    "author": "Yourname",
+    "category": "Other"
+}
